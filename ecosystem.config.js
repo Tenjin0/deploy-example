@@ -18,7 +18,9 @@ module.exports = {
       path : '/home/ppetit/deploy',
       'pre-deploy-local': '',
       'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env production',
-      'pre-setup': ''
+      'pre-setup': '',
+      'post-setup' : 'npm install && pm2 reload ecosystem.config.js --env production',
+      
     }
   }
 };
